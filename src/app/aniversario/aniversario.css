@@ -1,0 +1,120 @@
+.contenedor {
+  text-align: center;
+  padding: 30px;
+  background: #e4e4e4; /* azul claro */
+  min-height: 100vh;
+}
+
+.titulo-principal {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-actividades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.actividad-card, mat-card {
+  border-radius: 15px; /* bordes redondeados */
+  border: 2px solid #e5e7eb; /* borde general */
+  border-left: 6px solid #f97316; /* línea vertical naranja */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* sombra más visible */
+  background-color: #ffffff; /* fondo blanco */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  padding: 20px; /* espacio interno para que la línea no se vea pegada al contenido */
+}
+
+.actividad-card:hover, mat-card:hover {
+  transform: translateY(-5px); /* efecto flotante */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* sombra más intensa */
+  border-color: #3b82f6; /* borde azul al pasar el mouse */
+  border-left-color: #f97316; /* la línea naranja permanece */
+}
+
+
+.acciones-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-inscribirse {
+  background-color: #3b82f6; /* azulito */
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-inscribirse:hover {
+  background-color: #2563eb; /* azul más fuerte */
+  transform: scale(1.05);
+}
+
+mat-card {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* sombra */
+  border-radius: 12px; /* bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+mat-card:hover {
+  transform: translateY(-5px); /* efecto flotante */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* sombra más fuerte al pasar el mouse */
+}
+mat-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a; /* azul oscuro */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+footer {
+  margin-top: 100px;
+  padding: 20px 0;
+  background: #1e3a8a; /* azul oscuro */
+  color: white;
+  text-align: center;
+}
+header {
+  background: #1e3a8a; /* azulito */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.titulo-principal {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.banner {
+  margin: 20px 0;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
