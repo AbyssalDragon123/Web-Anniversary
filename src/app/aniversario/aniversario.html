@@ -1,6 +1,6 @@
 <header>
-  <h1 class="titulo-principal">
-    🎉 Aniversario Universidad Regional de Guatemala - Sede San Raymundo 🎉
+  <h1  class="titulo-principal">
+    🎉 Aniversario Regional 🎉
   </h1>
 </header>
 
@@ -17,7 +17,7 @@
 
   <div class="grid-actividades">
    <mat-card *ngFor="let actividad of actividades" class="actividad-card">
-
+  <img mat-card-image [src]="actividad.imagen" alt="{{ actividad.titulo }}">
 
    <h2 class="titulo-evento">{{ actividad.titulo }}</h2>
 

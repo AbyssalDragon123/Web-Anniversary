@@ -8,7 +8,7 @@
 .titulo-principal {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #1e3a8a;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -104,7 +104,7 @@ header {
   text-align: center;
 }
 .titulo-principal {
-  font-size: 2.2rem;
+  font-size: 2.9rem;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 15px;
@@ -122,4 +122,53 @@ header {
 h2 {
   color: #1e3a8a; /* azul oscuro */
   margin-bottom: 10px;
+}
+.carrusel {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carrusel-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.actividad-card {
+  min-width: 300px; /* ancho mínimo de cada card */
+  flex: 0 0 auto;
+}
+.actividad-card img {
+  width: 100%;
+  height: 180px; /* Ajusta según lo que necesites */
+  object-fit: cover; /* La imagen se recorta sin deformarse */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-bottom: 10px;
+}
+/* Para móviles */
+@media (max-width: 600px) {
+  .titulo-principal {
+    font-size: 2rem;
+  }
+  .descripcion {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .actividad-card img {
+    height: 150px;
+  }
+}
+
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .titulo-principal {
+    font-size: 2.5rem;
+  }
+  .descripcion {
+    font-size: 1.1rem;
+  }
+  .actividad-card img {
+    height: 160px;
+  }
 }
