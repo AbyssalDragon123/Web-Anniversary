@@ -118,3 +118,8 @@ header {
   overflow: hidden;
 
 }
+
+h2 {
+  color: #1e3a8a; /* azul oscuro */
+  margin-bottom: 10px;
+}

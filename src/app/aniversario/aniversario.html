@@ -1,40 +1,43 @@
 <header>
-    <h1 class="titulo-principal">
+  <h1 class="titulo-principal">
     🎉 Aniversario Universidad Regional de Guatemala - Sede San Raymundo 🎉
-</h1>
+  </h1>
 </header>
 
 <div class="contenedor">
-
-<div class="banner">
+  <div class="banner">
     <img src="banner.jpg" alt="">
-</div>
-<p class="descripcion">
+  </div>
+
+  <p class="descripcion">
     Con motivo de nuestro aniversario, realizaremos actividades culturales y artísticas 
     donde podrás mostrar tu talento, aprender y disfrutar con toda la comunidad universitaria.
     ¡Inscríbete y sé parte de esta celebración única!
-</p>
+  </p>
 
-<div class="grid-actividades">
-  <mat-card *ngFor="let actividad of actividades" class="actividad-card">
-    <img mat-card-image [src]="actividad.imagen" [alt]="actividad.titulo">
-    <mat-card-header>
-    <mat-card-title>{{ actividad.titulo }}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
+  <div class="grid-actividades">
+   <mat-card *ngFor="let actividad of actividades" class="actividad-card">
+
+
+   <h2 class="titulo-evento">{{ actividad.titulo }}</h2>
+
+  <mat-card-content>
     <p>{{ actividad.descripcion }}</p>
     <p><b>📍 Lugar:</b> {{ actividad.lugar }}</p>
     <p><b>🗓 Fecha:</b> {{ actividad.fecha }}</p>
-    </mat-card-content>
-    <mat-card-actions class="acciones-card">
+  </mat-card-content>
+
+  <mat-card-actions class="acciones-card">
     <a [href]="actividad.link" target="_blank" rel="noopener noreferrer">
-        <button class="btn-inscribirse">Inscribirse</button>
+      <button class="btn-inscribirse">Inscribirse</button>
     </a>
-    </mat-card-actions>
+  </mat-card-actions>
 </mat-card>
+
+
+  </div>
 </div>
 
-</div>
 <footer>
-<p>© 2025 Universidad Regional de Guatemala - Equipo de Promoción Sistemas Informáticos</p>
+  <p>© 2025 Universidad Regional de Guatemala - Equipo de Promoción Sistemas Informáticos</p>
 </footer>
